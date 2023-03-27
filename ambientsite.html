@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A Rainy Day</title>
+    <link rel="stylesheet" href="https://use.typekit.net/mkk8qeo.css">
+     <link rel="icon" type="image/x-icon" href="drops.png">
+
+    <style>
+
+
+    @font-face {
+      font-family: lores-21-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @keyframes timeofday{
+      0% {background-color:skyblue;}
+      50% {background-color: navy;}
+      100% {background-color:skyblue;}
+
+    }
+
+    body{
+      background-color: skyblue;
+      animation-name:timeofday;
+      animation-duration: 86400s;
+      animation-iteration-count: infinite;
+
+      margin: 0;
+      padding: 0;
+
+    }
+
+    #title{
+      font-family: lores-21-serif;
+      color: white;
+      font-size: 1000%;
+    }
+
+    #text{
+      font-family: lores-21-serif;
+      color: white;
+      font-size: 200%;
+      margin-left: 900px;
+      margin-top: -120px;
+
+    }
+
+    .rain{
+      margin-top: -180px;
+      height: 110vh;
+      width: 100vw;
+      background: url(rain.png);
+      animation: rain 1s linear infinite;
+    }
+
+    .rain:before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      animation: lighting 1s linear infinite;
+      opacity:0;
+    }
+
+    @keyframes rain{
+      0% {background-position: 0% 0%;}
+      100% {background-position: 20% 100%;}
+
+
+    }
+
+
+
+
+    </style>
+
+
+
+  
+  </head>
+  <body>
+
+    <div id="title">A Rainy Day</div>
+
+    <div id="text">
+      Stay a while <br><br>
+      Watch the rain with me 
+    </div>
+
+
+   
+
+    <audio autoplay loop>
+      <source src="Rain.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="rain"></div>
+
+
+
+
+
+
+  
+
+    <script>
+      
+    </script>
+  </body>
+</html>
