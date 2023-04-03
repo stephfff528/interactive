@@ -1,0 +1,82 @@
+@font-face {
+font-family: ERTHQAKE;
+src: url(ERTHQAKE.TTF);
+}
+
+#title-vertical{
+	position:fixed;
+	width: 201px;
+	height:830px;
+	display: flex;
+	flex-direction: column;
+	
+
+}
+
+.letters{
+	border:solid;
+	font-family: ERTHQAKE;
+	font-size: 700%;
+	text-align: center;
+	width: 200px;
+	height: 200px;
+	padding-top: 35px;
+
+	background-color: black;
+
+}
+
+#title-horizontal{
+	position: fixed;
+	margin-top: 830px;
+	width:1900px;
+	height:175px ;
+	display: flex;
+}
+
+
+.letters2{
+	border:solid;
+	font-family: ERTHQAKE;
+	font-size: 700%;
+	text-align: center;
+	width: 200px;
+	height: 200px;
+	padding-top: 45px;
+	background-color: black;
+
+}
+
+#quilt{
+	margin-left:210px;
+	display: grid;
+	grid-template-columns: 200px 200px 200px 200px 200px 200px 200px 200px 200px ;
+
+}
+
+.tile{
+	border:solid;
+	width: 200px;
+	height: 200px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
