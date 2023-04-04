@@ -87,6 +87,8 @@ font-style: normal;
 
 
 #options {
+ border: 1px solid;
+
   width: 100vw;
   height:100vh;
   background-color: yellow;

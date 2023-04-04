@@ -16,7 +16,7 @@ document.querySelectorAll(".tile").forEach(tile => {
       }
 
       // figure out which block was clicked on
-      current_block = event.target;
+      current_tile = event.target;
   });
 
 });
@@ -37,16 +37,16 @@ document.getElementById("submit").addEventListener('click', event => {
   // depending on the mood, change the display of the block. 
   // you could add some code to display the correct image here!
   if (mood == "happy") {
-    current_block.style.backgroundColor = "yellow";
+    current_tile.style.backgroundColor = "yellow";
   }
   else if (mood == "grumpy") {
-    current_block.style.backgroundColor = "brown";
+    current_tile.style.backgroundColor = "brown";
   }
   else if (mood == "sad") {
-    current_block.style.backgroundColor = "blue";
+    current_tile.style.backgroundColor = "blue";
   }
   else if (mood == "weird") {
-    current_block.style.backgroundColor = "purple";
+    current_tile.style.backgroundColor = "purple";
   }
   
 });
