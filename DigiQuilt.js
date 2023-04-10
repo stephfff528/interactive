@@ -6,8 +6,10 @@ document.querySelectorAll(".tile").forEach(tile => {
 
    tile.addEventListener('click', event => {
 
+      console.log("clicked!!");
       // show the form with the options.
-      document.getElementById("options").style.display = "tile";
+      document.getElementById("options").style.display = "block";
+      document.getElementById("options").classList.add("fade-in");
 
       // reset all radio buttons, so none are selected
       var options = document.getElementsByTagName("input");
@@ -25,6 +27,7 @@ document.getElementById("submit").addEventListener('click', event => {
   
   // hide the form
   document.getElementById("options").style.display = "none";
+  document.getElementById("options").style.opacity = 0;
 
   // figure out which option was selected.
   var options = document.getElementsByTagName("input");
@@ -37,10 +40,14 @@ document.getElementById("submit").addEventListener('click', event => {
   // depending on the mood, change the display of the block. 
   // you could add some code to display the correct image here!
   if (mood == "happy") {
-    current_tile.style.backgroundColor = "yellow";
+    // current_tile.style.backgroundImage = "url('water.png')";
+    current_tile.getElementsByTagName("img")[0].src = "water.png";
+    current_tile.getElementsByTagName("img")[0].style.display = "block"
   }
   else if (mood == "grumpy") {
     current_tile.style.backgroundColor = "brown";
+    current_tile.getElementsByTagName("img")[0].src = "water.png";
+    current_tile.getElementsByTagName("img")[0].style.display = "block"
   }
   else if (mood == "sad") {
     current_tile.style.backgroundColor = "blue";
