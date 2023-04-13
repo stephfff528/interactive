@@ -8,8 +8,9 @@ document.querySelectorAll(".tile").forEach(tile => {
 
       console.log("clicked!!");
       // show the form with the options.
-      document.getElementById("options").style.display = "block";
-      document.getElementById("options").classList.add("fade-in");
+      document.getElementById("options").style.opacity = 1;
+      document.getElementById("options").style.pointerEvents = "initial";
+
 
       // reset all radio buttons, so none are selected
       var options = document.getElementsByTagName("input");
@@ -26,8 +27,8 @@ document.querySelectorAll(".tile").forEach(tile => {
 document.getElementById("submit").addEventListener('click', event => {
   
   // hide the form
-  document.getElementById("options").style.display = "none";
   document.getElementById("options").style.opacity = 0;
+  document.getElementById("options").style.pointerEvents = "none";
 
   // figure out which option was selected.
   var options = document.getElementsByTagName("input");
