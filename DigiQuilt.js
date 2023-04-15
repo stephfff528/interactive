@@ -42,7 +42,7 @@ document.getElementById("submit").addEventListener('click', event => {
   // you could add some code to display the correct image here!
   if (mood == "confident") {
     // current_tile.style.backgroundImage = "url('water.png')";
-    current_tile.getElementsByTagName("img")[0].src = "water.png";
+    current_tile.getElementsByTagName("img")[0].src = "moodsample.png";
     current_tile.getElementsByTagName("img")[0].style.display = "block"
   }
   else if (mood == "grateful") {
