@@ -12,10 +12,13 @@ body{
 h1{
 	color: white;
 	margin-top: -250px;
+	text-align: center;
 }
 
-.center{
+.group1{
 	position: absolute;
+	margin-top: -500px;
+	margin-left: 100px;
 	width: 550px;
 	height: 550px;
 	display: flex;
@@ -23,13 +26,29 @@ h1{
 	align-items: center;
 }
 
+.group2{
+	position: absolute;
+	margin-top: 100px;
+	margin-left: -200px;
+	width: 550px;
+	height: 550px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: scale(2, 2);
+}
+
+.group3{
+	
+}
 span{
 	position: absolute;
 	width: calc(100% - 100px * var(--size));
 	height: calc(100% - 100px * var(--size));
-	animation: anim 5s linear infinite;
-	border-radius: 50%;
+	animation: anim 4s linear infinite;
+	border-radius: 45%;
 }
+
 
 @keyframes anim{
 	0%{
@@ -43,8 +62,8 @@ span{
 span::before{
 	content: '';
 	position: absolute;
-	width: 40px;
-	height: 40px;
+	width: 20px;
+	height: 20px;
 	top: 50px;
 	left: 5px;
 	background: var(--color);
@@ -67,6 +86,7 @@ span:nth-child(3)::before{
 	0px 0px 2px 15px rgba(255, 0, 255, .1);
 }
 
+
 span:nth-child(2){
 	animation-direction: reverse;
 }
@@ -75,6 +95,17 @@ span:nth-child(2){
 span:nth-child(3){
 	animation-direction: alternate;
 }
+
+
+span:nth-child(4){
+	animation-direction: alternate-reverse;
+}
+
+
+
+
+
+
 
 
 
