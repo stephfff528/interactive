@@ -1,7 +1,11 @@
 @font-face{
 	font-family: LASER;
-	src: url(LASER.ttf) ;
+	src: url(LASER.ttf);
 }
+
+
+
+
 
 body{
 	margin:0;
@@ -12,21 +16,6 @@ body{
 	min-height: 100vh;
 	background: black;
 	overflow: hidden;
-}
-
-.landing{
-	position: relative;
-	display: flex;
-}
-.title{
-	position: absolute;
-	font-family: LASER;
-	text-align: center;
-	top: 50%;
-	left: 50%;
-	color: white;
-	font-size: 50px;
-	border: 2px solid white;
 }
 
 .small{
