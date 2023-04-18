@@ -38,11 +38,12 @@ body{
 	font-family: LASER;
 	right:0;
 	padding-right: 10px;
+	font-size: 20px;
 }
 
 
 #score{
-	margin-left: 55px;
+	margin-left: 70px;
 }
 
 .circle{
