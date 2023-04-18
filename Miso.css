@@ -16,7 +16,7 @@ body{
 
 .landing{
 	position:fixed;
-	margin-top: -12px;
+	top: 5px;
 	padding-left: 5px;
 	line-height: 1;
 }
@@ -28,10 +28,10 @@ body{
 }
 
 
-
 .scoreboard{
 	position: fixed;
-	color: white;
+	top: 17px;
+	color: lightgray;
 	font-family: LASER;
 	right:0;
 	padding-right: 10px;
@@ -52,11 +52,13 @@ body{
 }
 
 #score{
-	margin-left: 70px;
+	margin-left: 67px;
 }
 
 .circle{
-	margin-top: 150px;
+	margin-top: 50px;
+	position:fixed;
+	margin-left: 170px;
 }
 
 
@@ -138,3 +140,8 @@ body{
         transform: translate3d(var(--xB), var(--yB), 0);
       }
     }
+
+
+  a{
+  	color: white;
+  }

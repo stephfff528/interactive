@@ -1,0 +1,37 @@
+@font-face{
+	font-family: LASER;
+	src: url(LASER.ttf);
+}
+
+body{
+	font-family: LASER;
+	background-color: black;
+	color: white;
+
+
+}
+
+.miso{
+	font-size: 25px;
+	text-align: center;
+
+}
+
+.description{
+	font-size:15px;
+
+	line-height: 20px;
+}
+
+.monologue{
+	font-size: 10px;
+	line-height: 15px;
+	text-align: center;
+}
+
+img {
+	width: 350px;
+	height:auto;
+	align-content: center;
+	padding: 10px;
+}
