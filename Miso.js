@@ -31,21 +31,13 @@
       return r;
     }
 
-    function start_handler(ev) {
-      ev.preventDefault();
+  
 
-      if (ev.targetTouches.length == 1) {
-        document.body.style.background = "red";
-      } else if (ev.targetTouches.length == 2) {
-        document.body.style.background = "orange";
-      } else if (ev.targetTouches.length == 3) {
-        document.body.style.background = "yellow";
-      } else if (ev.targetTouches.length == 4) {
-        document.body.style.background = "pink";
-      } else {
-        document.body.style.background = "black";
-      }
-    }
+
+
+
+
+
 
 
 
