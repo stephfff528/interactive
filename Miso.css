@@ -27,10 +27,7 @@ body{
 	font-size: 80px;
 }
 
-.info{
-	font-family: LASER;
-	color:white;
-}
+
 
 .scoreboard{
 	position: fixed;
@@ -41,6 +38,18 @@ body{
 	font-size: 20px;
 }
 
+.info{
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	font-family: LASER;
+	color:white;
+	margin-top: 200px;
+	text-align: right;
+	padding-right: 5px;
+	padding-bottom: 10px;
+
+}
 
 #score{
 	margin-left: 70px;
