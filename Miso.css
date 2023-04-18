@@ -1,111 +1,109 @@
+@font-face{
+	font-family: LASER;
+	src: url(LASER.ttf) ;
+}
+
 body{
 	margin:0;
 	padding: 0;
-	box-sizing: border-box;
-	display: flex;
+	display: grid;
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
 	background: black;
+	overflow: hidden;
 }
 
-h1{
-	color: white;
-	margin-top: -250px;
+.landing{
+	position: relative;
+	display: flex;
+}
+.title{
+	position: absolute;
+	font-family: LASER;
 	text-align: center;
+	top: 50%;
+	left: 50%;
+	color: white;
+	font-size: 50px;
+	border: 2px solid white;
 }
 
-.group1{
-	position: absolute;
-	margin-top: -500px;
-	margin-left: 100px;
-	width: 550px;
-	height: 550px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.group2{
-	position: absolute;
-	margin-top: 100px;
-	margin-left: -200px;
-	width: 550px;
-	height: 550px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	transform: scale(2, 2);
-}
-
-.group3{
-	
-}
-span{
-	position: absolute;
-	width: calc(100% - 100px * var(--size));
-	height: calc(100% - 100px * var(--size));
-	animation: anim 4s linear infinite;
-	border-radius: 45%;
-}
-
-
-@keyframes anim{
-	0%{
-		transform: rotate(0deg);
-	}
-	100%{
-		transform: rotate(360deg);
-	}
-}
-
-span::before{
-	content: '';
-	position: absolute;
+.small{
+	margin-left: 10px;
 	width: 20px;
-	height: 20px;
-	top: 50px;
-	left: 5px;
-	background: var(--color);
+	height:20px;
+	background-color:#0ff;
 	border-radius: 50%;
 	box-shadow: 0px 0px 2px 5px rgba(0, 255, 255, .1), 
 	0px 0px 2px 10px rgba(0, 255, 255, .1),
 	0px 0px 2px 15px rgba(0, 255, 255, .1);
 
+	  --xA: 10px;
+      --yA: 10px;
+      --xB: 10px;
+      --yB: 10px;
+
+     animation-name: moveCircle;
+     animation-duration: 2s;
+     animation-iteration-count: 1;
+     animation-timing-function: ease;
+
 }
 
-span:nth-child(2)::before{
+.medium{
+	align-items: center;
+	width: 40px;
+	height:40px;
+	background-color:#0f0;
+	border-radius: 50%;
 	box-shadow: 0px 0px 2px 5px rgba(0, 255, 0, .1), 
 	0px 0px 2px 10px rgba(0, 255, 0, .1),
 	0px 0px 2px 15px rgba(0, 255, 0, .1);
+
+
+	  --xA: 10px;
+      --yA: 10px;
+      --xB: 10px;
+      --yB: 10px;
+
+     animation-name: moveCircle;
+     animation-duration: 2s;
+     animation-iteration-count: 1;
+     animation-timing-function: ease;
+
+
 }
 
-span:nth-child(3)::before{
+.large{
+	margin-left: -10px;
+	width: 60px;
+	height:60px;
+	background-color:#f0f;
+	border-radius: 50%;
 	box-shadow: 0px 0px 2px 5px rgba(255, 0, 255, .1), 
 	0px 0px 2px 10px rgba(255, 0, 255, .1),
 	0px 0px 2px 15px rgba(255, 0, 255, .1);
+
+
+	  --xA: 10px;
+      --yA: 10px;
+      --xB: 10px;
+      --yB: 10px;
+
+     animation-name: moveCircle;
+     animation-duration: 2s;
+     animation-iteration-count: 1;
+     animation-timing-function: ease;
+
 }
 
 
-span:nth-child(2){
-	animation-direction: reverse;
-}
-
-
-span:nth-child(3){
-	animation-direction: alternate;
-}
-
-
-span:nth-child(4){
-	animation-direction: alternate-reverse;
-}
-
-
-
-
-
-
-
-
-
+ @keyframes moveCircle {
+      0% {
+        transform: translate3d(var(--xA), var(--yA), 0);
+      }
+      100% {
+        transform: translate3d(var(--xB), var(--yB), 0);
+      }
+    }
