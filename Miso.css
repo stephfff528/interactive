@@ -16,8 +16,9 @@ body{
 
 .landing{
 	position:fixed;
-	margin-top: 25px;
+	margin-top: -12px;
 	padding-left: 5px;
+	line-height: 1;
 }
 
 .title{
