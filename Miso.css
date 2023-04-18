@@ -3,10 +3,6 @@
 	src: url(LASER.ttf);
 }
 
-
-
-
-
 body{
 	margin:0;
 	padding: 0;
@@ -17,6 +13,26 @@ body{
 	background: black;
 	overflow: hidden;
 }
+
+.landing{
+	position:fixed;
+}
+
+.title{
+	font-family: LASER;
+	color:white;
+	font-size: 80px;
+}
+
+.info{
+	font-family: LASER;
+	color:white;
+}
+
+.circle{
+	margin-top: 400px;
+}
+
 
 .small{
 	margin-left: 10px;
