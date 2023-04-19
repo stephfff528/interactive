@@ -40,10 +40,15 @@
   var score = document.getElementById("score")
 
 
+
+
+
   document.body.onclick = function (){
     count++;
     score.innerHTML = count;
     console.log("body clicked!!!");
+
+
   }
 
 
@@ -52,12 +57,42 @@
   var large_click = function() {
       count = count+1;
       score.innerHTML = count;
+
+      large_array = [
+        'bird.mp4',
+        'mouse.mp4',
+        'koi.mp4',
+        'flies.mp4',
+        ]
+
+      function get_random_large(){
+        random_index = Math.floor(Math.random() * large_array.length);
+        selected_large = large_array[random_index]
+      }
+
+
+      var bird = document.getElementById("bird")
+
+      bird.style.display = "block";
+      bird.play();
+      vid.muted = false;
+      bird.addEventListener('ended', function() {
+        bird.style.display = "none";
+
+  })
       console.log("large circle clicked!!!");
   };
-
   for (var i = 0; i < large_circles.length; i++) {
       large_circles[i].addEventListener('click', large_click, false);
   }
+
+
+
+
+
+
+
+
 
    var medium_circles = document.getElementsByClassName("medium");
 

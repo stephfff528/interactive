@@ -19,19 +19,25 @@ body{
 
 .description{
 	font-size:15px;
+	text-align: center;
 
 	line-height: 20px;
 }
 
 .monologue{
-	font-size: 10px;
+	font-size: 13px;
 	line-height: 15px;
 	text-align: center;
 }
 
 img {
+	display: flex;
+	justify-content: center;
 	width: 350px;
 	height:auto;
-	align-content: center;
 	padding: 10px;
 }
+
+  a{
+  	color: white;
+  }
