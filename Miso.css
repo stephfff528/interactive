@@ -30,8 +30,7 @@ body{
 
 .scoreboard{
 	position: fixed;
-	bottom: 0px;
-	left: 5px;
+	top: 17px;
 	color: lightgray;
 	font-family: LASER;
 	right:0;
@@ -53,7 +52,7 @@ body{
 }
 
 #score{
-
+	margin-left: 67px;
 }
 
 .center{
