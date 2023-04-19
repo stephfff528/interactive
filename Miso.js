@@ -1,5 +1,5 @@
 
- let container = document.querySelector("body");
+ let container = document.querySelector(".circle");
     container.addEventListener("animationend", changePosition, true);
 
 
@@ -40,43 +40,53 @@
   var score = document.getElementById("score")
 
 
+  var bodypts = document.getElementById("bodypts");
+
+  function hide_pts() = {
+  bodypts.style.display = "none";
+}
 
 
 
   document.body.onclick = function (){
     count++;
     score.innerHTML = count;
+
+
+
+    // document.getElementById("bodypts");
+    // bodypts.style.display = "none";
+    bodypts.style.display = "block";
+    setTimeout(hide_pts, 1000);
     console.log("body clicked!!!");
-
-
   }
 
 
   var large_circles = document.getElementsByClassName("large");
 
+  large_array = [
+    'bird.mp4',
+    'mouse.mp4',
+    'koi.mp4',
+    'flies.mp4',
+  ]
+
   var large_click = function() {
+
       count = count+1;
       score.innerHTML = count;
 
-      large_array = [
-        'bird.mp4',
-        'mouse.mp4',
-        'koi.mp4',
-        'flies.mp4',
-        ]
+      random_index = Math.floor(Math.random() * large_array.length);
+      selected_large = large_array[random_index];
+      document.getElementById("largevid").src = `./largevid/${selected_large}`;
 
-      function get_random_large(){
-        random_index = Math.floor(Math.random() * large_array.length);
-        selected_large = large_array[random_index]
-      }
+      
+      var largevid = document.getElementById("largevid")
 
-
-      var bird = document.getElementById("bird")
-
-      bird.style.display = "block";
-      bird.play();
+      largevid.style.display = "block";
+      largevid.play();
       vid.muted = false;
-      bird.addEventListener('ended', function() {
+      largevid.addEventListener('ended', function() {
         bird.style.display = "none";
 
   })
@@ -85,8 +95,6 @@
   for (var i = 0; i < large_circles.length; i++) {
       large_circles[i].addEventListener('click', large_click, false);
   }
-
-
 
 
 
