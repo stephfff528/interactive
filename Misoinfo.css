@@ -30,14 +30,32 @@ body{
 	text-align: center;
 }
 
-img {
-	display: flex;
-	justify-content: center;
-	width: 350px;
-	height:auto;
-	padding: 10px;
+.center{
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
-  a{
-  	color: white;
-  }
+a{
+	color:lightseagreen;
+}
+
+img{
+	width: 50%;
+	height: 50%;
+	padding: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

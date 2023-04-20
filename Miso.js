@@ -34,6 +34,8 @@ document.body.onclick = function (){
   count++;
   score.innerHTML = count;
   console.log("body clicked!!!");
+  var purr = document.getElementById("purr");
+  purr.play();
 }
 
 var large_circles = document.getElementsByClassName("large");
