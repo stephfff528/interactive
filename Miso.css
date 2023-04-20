@@ -31,9 +31,9 @@ body{
 .scoreboard{
 	position: fixed;
 	top: 17px;
+	right:0px;
 	color: lightgray;
 	font-family: LASER;
-	right:0px;
 	padding-right: 10px;
 	font-size: 20px;
 }
@@ -195,14 +195,12 @@ justify-content: center;
 
 
   a{
-  	color: white;
+  	color: green;
   }
 
 
 video{
 	position:fixed;
-  left: 20%;
-  top: 50%;
   display: none;
 }
 
