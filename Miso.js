@@ -28,6 +28,38 @@ function changePosition(event) {
 
 var count = 0 
 var score = document.getElementById("score")
+var bodypts = document.getElementById("bodypts")
+var largepts = document.getElementById("largepts")
+var mediumpts = document.getElementById("mediumpts")
+var smallpts = document.getElementById("smallpts")
+
+ function fade_out(element) {
+            var op = 1;  // initial opacity
+            var timer = setInterval(function () {
+                if (op <= 0.1){
+                    clearInterval(timer);
+                    element.style.display = 'none';
+                }
+                element.style.opacity = op;
+                element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+                op -= op * 0.1;
+            }, 50);
+        };
+
+        function fade_in(element) {
+            var op = 0.1;  // initial opacity
+            element.style.display = 'block';
+            var timer = setInterval(function () {
+                if (op >= 1){
+                    clearInterval(timer);
+                }
+                element.style.opacity = op;
+                element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+                op += op * 0.1;
+            }, 10);
+        };
+
+
 
 
 document.body.onclick = function (){
@@ -36,6 +68,8 @@ document.body.onclick = function (){
   console.log("body clicked!!!");
   var purr = document.getElementById("purr");
   purr.play();
+  fade_in(bodypts, fade_out(bodypts));
+
 }
 
 var large_circles = document.getElementsByClassName("large");
@@ -59,6 +93,8 @@ var large_click = function() {
   largevid.muted = false;
   largevid.addEventListener('ended', function() {
     largevid.style.display = "none";
+  
+  fade_in(largepts, fade_out(largepts));
   })
 };
 
@@ -96,6 +132,7 @@ var medium_click = function() {
   mediumvid.muted = false;
   mediumvid.addEventListener('ended', function() {
     mediumvid.style.display = "none";
+   fade_in(mediumpts, fade_out(mediumpts));
   })
 
 
