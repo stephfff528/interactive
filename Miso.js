@@ -28,12 +28,8 @@ function changePosition(event) {
 
 var count = 0 
 var score = document.getElementById("score")
-var bodypts = document.getElementById("bodypts")
-var largepts = document.getElementById("largepts")
-var mediumpts = document.getElementById("mediumpts")
-var smallpts = document.getElementById("smallpts")
 
- function fade_out(element) {
+function fade_out(element) {
             var op = 1;  // initial opacity
             var timer = setInterval(function () {
                 if (op <= 0.1){
@@ -59,6 +55,10 @@ var smallpts = document.getElementById("smallpts")
             }, 10);
         };
 
+var bodypts = document.getElementById("bodypts")
+var largepts = document.getElementById("largepts")
+var mediumpts = document.getElementById("mediumpts")
+var smallpts = document.getElementById("smallpts")
 
 
 
@@ -68,8 +68,24 @@ document.body.onclick = function (){
   console.log("body clicked!!!");
   var purr = document.getElementById("purr");
   purr.play();
-  fade_in(bodypts, fade_out(bodypts));
 
+  var clicked_element = event.target;
+
+    // if the clicked element has class "large", then the large
+    // element was clicked. And so on.
+    if (clicked_element.classList.contains("large")) {
+      console.log("Large clicked!!");
+      fade_in(largepts, fade_out(largepts));
+    } else if (clicked_element.classList.contains("medium")) {
+      console.log("Medium clicked!!");
+      fade_in(mediumpts, fade_out(mediumpts));
+    } else if (clicked_element.classList.contains("small")) {
+      console.log("Small clicked!!");
+      fade_in(smallpts, fade_out(smallpts));
+    } else {
+      console.log("Body clicked!!");
+      fade_in(bodypts, fade_out(bodypts));
+    }
 }
 
 var large_circles = document.getElementsByClassName("large");
@@ -93,8 +109,6 @@ var large_click = function() {
   largevid.muted = false;
   largevid.addEventListener('ended', function() {
     largevid.style.display = "none";
-  
-  fade_in(largepts, fade_out(largepts));
   })
 };
 
@@ -175,13 +189,8 @@ var small_click = function() {
 for (var i = 0; i < small_circles.length; i++) {
   small_circles[i].addEventListener('click', small_click, false);
 }
-  
 
-
-
-
-
-
+ 
 
 
 
