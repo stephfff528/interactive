@@ -1,0 +1,134 @@
+@font-face{
+	font-family: "lores-9-plus-narrow";
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "lores-9-plus-wide";
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "lores-9-narrow";
+	font-weight: 400;
+	font-style: normal;
+}
+
+body{
+	background-color: seagreen;
+}
+
+
+.banner{
+	position: fixed;
+	display: block;
+	background-color: #ff3186;
+	height: 100vh;
+	width: 75vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow-x: hidden;
+}
+
+
+.info{
+	width: 50vw;
+	height: 50vh;
+	position: fixed;
+	padding: 20px;
+	font-family: "lores-9-narrow";
+	font-size: 120%;
+	color: white;
+	margin-left: -100px;
+	opacity:0;
+
+}
+
+.welcome{
+	position: fixed;
+	font-family: "lores-9-plus-wide";
+	font-size: 800%;
+	color: white;
+	text-shadow: 5px 5px black;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.welcome:hover{
+	font-size: 1000%;
+}
+
+.assignments{
+	position: fixed;
+	margin-left: 1133.5px;
+	height: 100vh;
+	width: 25vw;
+
+}
+
+.projects{
+	background-color: #ff725c;
+	height: 50vh;
+
+}
+
+.exercises{
+	background-color: #ffb437;
+	height: 50vh;
+}
+
+.heading{
+	color: white;
+	font-family: "lores-9-plus-narrow";
+	font-size: 300%;
+	text-shadow: 3px 3px black;
+	padding: 10px;
+}
+
+.list{
+	font-family: "lores-9-narrow";
+	font-size: 200%;
+	padding: 10px;
+	margin-left: 20px;
+}
+
+a{
+	color: black;
+}
+
+a:hover{
+	font-style: italic;
+}
+
+marquee{
+	margin-top: -800px;
+	font-family: "lores-9-narrow";
+	color: white;
+	font-size: 300%;
+}
+
+#back{
+	position:fixed;
+	bottom: 0;
+	margin-left: 950px;
+	font-family: "lores-9-narrow";
+	color: white;
+	text-shadow: 3px 3px black;
+	font-size: 300%;
+	opacity:0;
+}
+
+#back:hover{
+	font-style:italic;
+}
+
+
+
+
+
+
+
